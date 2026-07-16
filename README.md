@@ -36,12 +36,17 @@ This project demonstrates UI and API test automation using Cypress, with reusabl
 
 ```text
 cypress/
-├── e2e/
-│   ├── api/serverest.cy.js
-│   ├── user_register.cy.js
-│   ├── user_login.cy.js
-│   ├── invalid_login.cy.js
-│   └── product_register.cy.js
+e2e/
+├── api/
+│   ├── create_new_product_api.cy.js
+│   ├── create_new_user_api.cy.js
+│   └── list_users_api.cy.js
+    └── user_login_api.cy.js
+└── frontend/
+    ├── invalid_login.cy.js
+    ├── product_register.cy.js
+    └── user_login.cy.js
+    └── user_register.cy.js
 ├── fixtures/
 ├── support/
 │   ├── commands.js
@@ -58,7 +63,7 @@ cypress/
 | User Login | ✅ |
 | Invalid Login | ✅ |
 | Add Product to Cart | ✅ |
-| API User CRUD Flow | ✅ |
+| API User CRUD and product creation Flow | ✅ |
 
 ## 🚀 Installation
 
