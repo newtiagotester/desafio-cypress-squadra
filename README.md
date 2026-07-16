@@ -62,7 +62,7 @@ e2e/
 | User Registration | ✅ |
 | User Login | ✅ |
 | Invalid Login | ✅ |
-| Add Product to Cart | ✅ |
+| Create a new product | ✅ |
 | API User CRUD and product creation Flow | ✅ |
 
 ## 🚀 Installation
