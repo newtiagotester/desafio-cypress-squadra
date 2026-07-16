@@ -109,7 +109,7 @@ describe('POST - Create New Product', () => {
 
     });
 
-    it.only('Should create a new product successfully', () => {
+    it('Should create a new product successfully', () => {
 
         const product = {
             nome: faker.commerce.productName(),
