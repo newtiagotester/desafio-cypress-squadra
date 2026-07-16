@@ -1,0 +1,29 @@
+info:
+  name: Criar Novo Usuario
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://serverest.dev/usuarios
+  headers:
+    - name: accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "nome": "Tiago dos Santos Leite",
+        "email": "tiago@teste.com.br",
+        "password": "teste",
+        "administrador": "true"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

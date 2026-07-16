@@ -1,0 +1,27 @@
+info:
+  name: Fazer Login
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: https://serverest.dev/login
+  headers:
+    - name: accept
+      value: application/json
+    - name: Content-Type
+      value: application/json
+  body:
+    type: json
+    data: |-
+      {
+        "email": "tiago@teste.com.br",
+        "password": "teste"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
